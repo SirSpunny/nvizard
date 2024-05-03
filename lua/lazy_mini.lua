@@ -9,6 +9,9 @@ return { -- Collection of various small independent plugins/modules
 		--  - ci'  - [C]hange [I]nside [']quote
 		require("mini.ai").setup({ n_lines = 500 })
 
+		-- git diff highlighting
+		require("mini.diff").setup()
+
 		-- Add/delete/replace surroundings (brackets, quotes, etc.)
 		--
 		-- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
@@ -30,8 +33,5 @@ return { -- Collection of various small independent plugins/modules
 		statusline.section_location = function()
 			return "%2l:%-2v"
 		end
-
-		-- ... and there is more!
-		--  Check out: https://github.com/echasnovski/mini.nvim
 	end,
 }
