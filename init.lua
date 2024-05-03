@@ -30,10 +30,17 @@ vim.opt.cursorline = true -- Show which line your cursor is on
 vim.opt.scrolloff = 10 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.hlsearch = true -- Set highlight on search
 vim.opt.title = true
-vim.opt.titlestring = "nvim - " .. vim.fn.getcwd()
+vim.opt.titlestring = "nvim [ " .. vim.fn.getcwd() .. " ]"
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
+--
+vim.api.nvim_create_autocmd("DirChanged", {
+	desc = "Update titlestring on buffer change",
+	callback = function()
+		vim.opt.titlestring = "nvim [ " .. vim.fn.getcwd() .. " ]"
+	end,
+})
 
 -- Highlight when yanking (copying) text
 vim.api.nvim_create_autocmd("TextYankPost", {
