@@ -11,6 +11,6 @@ return {
 		debug = false, -- Prints errors and the command which is run.
 	},
 	keys = {
-		{ "<leader>tg", "<cmd>Gen<CR>", desc = "gen {ai}" },
+		{ "<leader>cg", "<cmd>Gen<CR>", desc = "[c]hat [g]enerative llm" },
 	},
 }
