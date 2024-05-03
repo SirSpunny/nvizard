@@ -14,10 +14,13 @@ return { -- Collection of various small independent plugins/modules
 
 		-- mini map
 		local minimap = require("mini.map")
-		minimap.setup({ integrations = {
-			minimap.gen_integration.diff(),
-			minimap.gen_integration.gitsigns(),
-		} })
+		minimap.setup({
+			integrations = {
+				minimap.gen_integration.diagnostic(),
+				minimap.gen_integration.diff(),
+				minimap.gen_integration.gitsigns(),
+			},
+		})
 		vim.keymap.set("n", "<Leader>mc", MiniMap.close, { desc = "[m]ap [c]lose" })
 		vim.keymap.set("n", "<Leader>mf", MiniMap.toggle_focus, { desc = "[m]ap toggle [f]ocus" })
 		vim.keymap.set("n", "<Leader>mo", MiniMap.open, { desc = "[m]ap [o]pen" })
