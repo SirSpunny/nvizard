@@ -1,5 +1,7 @@
 # nvizard
 
+Neovim Config - heavily relying on [mini.nvim](https://github.com/echasnovski/mini.nvim/tree/main)
+
 ## WARNING
 This is for my personal workflow. Maintanance is only sporadic and breaking changes won't be handled correctly. But feel free to use this config.
 
