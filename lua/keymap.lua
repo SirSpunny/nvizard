@@ -12,7 +12,7 @@ vim.keymap.set("n", "gq", vim.diagnostic.setloclist, { desc = "[g]o to diagnosti
 
 -- terminal helper
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
-vim.keymap.set("n", "<leader>tt", ":split<CR>:term<CR>", { desc = "[t]erminal split" })
+vim.keymap.set("n", "<leader>tt", ":12split<CR>:term<CR>a", { desc = "[t]erminal split" })
 
 -- Use CTRL+<hjkl> to switch between windows
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
