@@ -2,9 +2,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true -- Set to true if you have a Nerd Font installed
-vim.g.OLLAMA_MODEL = "llama3"
-vim.g.OLLAMA_HOST = "127.0.0.1"
-vim.g.OLLAMA_PORT = "11434"
 
 require("keymap") -- keymaps are sourced in ./lua/keymap.lua
 
