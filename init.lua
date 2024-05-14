@@ -75,8 +75,8 @@ require("lazy").setup({
 	require("lazy_ranger"), -- file manager
 	require("lazy_todo-comments"), -- TODO, NOTE, etc highlighting
 	require("lazy_gitsigns"), -- git signs
-	require("lazy_gen"), -- AI assistant
 	require("lazy_glow"), --markdown highlighting
+	require("lazy_ollama"),
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {
