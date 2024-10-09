@@ -18,14 +18,14 @@ return {
 
 		-- Sample keybind for direct prompting. Note that the <c-u> is important for selections to work properly.
 		{
-			"<leader>oG",
+			"<leader>og",
 			":<c-u>lua require('ollama').prompt('Generate_Code')<cr>",
 			desc = "ollama Generate Code",
 			mode = { "n", "v" },
 		},
 
 		{
-			"<leader>oA",
+			"<leader>oa",
 			":<c-u>lua require('ollama').prompt('Ask_About_Code')<cr>",
 			desc = "[o]llama ask",
 			mode = { "n", "v" },
