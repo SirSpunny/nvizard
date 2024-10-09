@@ -2,6 +2,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true -- Set to true if you have a Nerd Font installed
+vim.g.loaded_perl_provider = 0
 
 require("keymap") -- keymaps are sourced in ./lua/keymap.lua
 
@@ -72,7 +73,6 @@ require("lazy").setup({
 	require("lazy_treesitter"), -- treesitter
 	require("lazy_coq"), -- autocompletion
 	require("lazy_whichkey"), -- hotkey preview
-	require("lazy_ranger"), -- file manager
 	require("lazy_todo-comments"), -- TODO, NOTE, etc highlighting
 	require("lazy_gitsigns"), -- git signs
 	require("lazy_glow"), --markdown highlighting

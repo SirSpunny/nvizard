@@ -33,7 +33,7 @@ return {
 	},
 	config = function()
 		require("ollama").setup({
-			model = "llama3",
+			model = os.getenv("OLLAMA_CLIENT_MODEL") or "llama3",
 			url = os.getenv("OLLAMA_CLIENT_URL") or "http://127.0.0.1:11434",
 			serve = {
 				on_start = false,
